@@ -1,0 +1,18 @@
+# 标记根配置插件不再继续向往查找配置文件
+root = true
+
+# 规则的适用文件匹配模式
+[*]
+# 设置文本的字符集
+charset = utf-8
+# 设置缩进风格(tab是硬缩进，space为软缩进)
+indent_style = space
+# 用一个整数定义的列数来设置缩进的宽度，如果indent_style为tab，则此属性默认为tab_width
+indent_size = 4
+# 设置换行符，值为lf、cr和crlf
+end_of_line = lf
+# 设为true表示使文件以一个空白行结尾
+insert_final_newline = true
+# 设为true表示会去除换行行首的任意空白字符。
+trim_trailing_whitespace = true
+
