@@ -45,12 +45,28 @@ eslint 配置
 'indent':[2,4],
 ```
 
+## 项目环境变量设置
+```
+.env                # 在所有的环境中被载入
+.env.local          # 在所有的环境中被载入，但会被 git 忽略
+.env.development         # 只在指定的模式中被载入
+.env.development.local   # 只在指定的模式中被载入，但会被 git 忽略
+.env.production        # 只在指定的模式中被载入
+.env.production.local   # 只在指定的模式中被载入，但会被 git 忽略
+```
+这里我们本地配置.env.development.local, 线下配置.env.production.local
+
+## axios配置
+安装
+```
+npm install --save axios vue-axios
+```
 
 
 
 
 
-
+<!--
 ## Project setup
 ```
 npm install
@@ -69,6 +85,6 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
-```
+``` -->
 
 

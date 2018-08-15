@@ -1,13 +1,9 @@
 const path = require('path')
-const fs = require('fs')
 
 const resolve = dir => {
     // __dirname The directory name of the current module.
     return path.join(__dirname, dir)
 }
-
-const env = process.env.NODE_ENV || 'development'
-fs.writeFileSync(path.join(__dirname, './config/env.js'), `export default '${env}'`)
 
 module.exports = {
     // If your app is deployed at a sub-path, you will need to specify that
