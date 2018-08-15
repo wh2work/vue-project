@@ -1,14 +1,21 @@
 # banchong
 
+# TODO
+* 配置axios
+* 增加一个assets 的目录别名
+* 配置基本的登录认证模块及用户权限模块
+* 研究为什么npm install 会更新package.json， package-lock 无效？
+* 配置工具目录
+* 规定api的请求 数据的交互规范
+* 列出完整的项目目录结构
+
 ## vue.config.js 配置
 ### baseUrl
 配置站点的根子路径
 
 ### 目录别名
-src 目录缩写为 @
-components 目录的缩写为 _c
-config 目录的缩写为 _conf
-
+* src 目录缩写为 @
+* components 目录的缩写为 _c
 
 ## 代码统一与自动格式化
 ### 代码风格统一插件 [EditorConfig](https://editorconfig.org/)
@@ -54,7 +61,7 @@ eslint 配置
 .env.production        # 只在指定的模式中被载入
 .env.production.local   # 只在指定的模式中被载入，但会被 git 忽略
 ```
-这里我们本地配置.env.development.local, 线下配置.env.production.local
+这里我们本地配置.env.development.local, 线上配置.env.production.local
 
 ## axios配置
 安装
