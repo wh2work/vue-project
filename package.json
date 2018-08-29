@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "element-ui": "^2.4.6",
+    "mockjs": "^1.0.1-beta3",
     "vue": "^2.5.17",
     "vue-axios": "^2.1.3",
     "vue-router": "^3.0.1",
