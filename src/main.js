@@ -6,6 +6,8 @@ import store from './store'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import '@/styles/index.scss' // global css  覆盖element-ui样式
+
 import './mock'
 
 Vue.use(Element, {
