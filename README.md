@@ -1,12 +1,6 @@
 # banchong
 
 # TODO
-* 配置axios
-* 增加一个assets 的目录别名
-* 配置基本的登录认证模块及用户权限模块
-* 研究为什么npm install 会更新package.json， package-lock 无效？
-* 配置工具目录
-* 规定api的请求 数据的交互规范
 * 列出完整的项目目录结构
 
 ## vue.config.js 配置

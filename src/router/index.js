@@ -24,7 +24,7 @@ router.beforeEach((to, from, next) => {
             next({path: '/'})
         } else {
             // 如果不是登录页面,判断用户的角色
-            if (store.getters.roles.length === 0) {
+            if (store.getters.permissions.length === 0) {
                 store.dispatch('GetUserInfo').then(response => {
                     const roles = response.data.roles
                 }).catch(error => {

@@ -10,6 +10,9 @@ import '@/styles/index.scss' // global css  覆盖element-ui样式
 
 import './mock'
 
+import permission from '@/utils/permission'
+Vue.use(permission)
+
 Vue.use(Element, {
     size: 'medium' // set element-ui default size
 })

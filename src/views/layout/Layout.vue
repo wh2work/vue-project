@@ -2,7 +2,7 @@
     <div class="app-wraper">
         <sidebar class="sidebar-container" />
 
-        <div class="mian-container">
+        <div class="main-container">
             <navbar />
             <tags-view/>
             <app-main />
@@ -28,5 +28,12 @@ export default {
 .app-wraper {
     display: flex;
 
+    .sidebar-container {
+        height: 100vh;
+    }
+
+    .main-container {
+        width: 100%;
+    }
 }
 </style>
