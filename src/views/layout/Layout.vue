@@ -15,7 +15,7 @@ import { Navbar, Sidebar, AppMain, TagsView } from './components'
 
 export default {
     name: 'Layout',
-    components: {Navbar, Sidebar, AppMain, TagsView},
+    components: { Navbar, Sidebar, AppMain, TagsView },
     data () {
         return {
 

@@ -53,14 +53,14 @@ const user = {
             return new Promise((resolve, reject) => {
                 getUserInfo(state.token).then(response => {
                     if (!response.data) { // 由于mockjs 不支持自定义状态码只能这样hack
-                        reject('error') // eslint-no-inline-rule
+                        reject('error') // eslint-disable-line
                     }
                     const data = response.data
 
                     if (data.permissions && data.permissions.length > 0) { // 验证返回的roles是否是一个非空数组
                         commit('SET_PERMISIONS', data.permissions)
                     } else {
-                        reject('getInfo: permissions must be a non-null array !')
+                        reject('getInfo: permissions must be a non-null array !') // eslint-disable-line
                     }
 
                     commit('SET_NAME', data.name)

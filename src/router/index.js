@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import constantRouterMap from './constantRouter'
 import store from '@/store/index'
-import {getToken} from '@/utils/auth'
+import { getToken } from '@/utils/auth'
 import { Message } from 'element-ui'
 Vue.use(Router)
 
@@ -21,17 +21,17 @@ router.beforeEach((to, from, next) => {
     if (getToken()) {
         // 如果有token进入的是login页面
         if (to.path === '/login') {
-            next({path: '/'})
+            next({ path: '/' })
         } else {
             // 如果不是登录页面,判断用户的角色
             if (store.getters.permissions.length === 0) {
                 store.dispatch('GetUserInfo').then(response => {
-                    const roles = response.data.roles
+                    // const roles = response.data.roles
                 }).catch(error => {
                     store.dispatch('FedLogOut').then(() => {
                         Message.error(error || '认证失败请重新登录')
                     })
-                    next({path: '/'})
+                    next({ path: '/' })
                 })
                 next()
             } else {
