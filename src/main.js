@@ -10,7 +10,15 @@ import '@/styles/index.scss' // global css  覆盖element-ui样式
 
 import './mock'
 
+// bootstrap
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// permission
 import permission from '@/utils/permission'
+
+Vue.use(BootstrapVue)
 Vue.use(permission)
 
 Vue.use(Element, {
