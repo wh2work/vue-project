@@ -60,6 +60,12 @@ npm install --save axios vue-axios
 ### axios配置及全局interceptor
 文件地址 utils/requirest.js
 
+## router及router navigation
+目录 src/router
+
+index.js 文件中 定义 router navigation
+每个模块在router目录下新建一个文件写该模块路由， 并在routers.js 中引入所有的模块路由
+
 ## 本地Token缓存
 文件地址 utils/auth.js
 
