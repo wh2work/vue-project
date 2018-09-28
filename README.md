@@ -1,5 +1,3 @@
-# banchong
-
 ## vue.config.js 配置
 ### baseUrl
 配置站点的根子路径
