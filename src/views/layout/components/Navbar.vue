@@ -1,7 +1,7 @@
 <template>
     <el-menu class="navbar" mode="horizontal">
         <div class="toggle-btn" @click="toggleSideBar">
-            <i class="el-icon-d-arrow-left"></i>
+            <i class="fa fa-exchange-alt"></i>
         </div>
 
         <div class="left-menu"></div>
@@ -9,7 +9,6 @@
             <!-- <error-log class="errLog-container right-menu-item"/> -->
             <el-dropdown class="avatar-container right-menu-item" trigger="click">
                 <div class="avatar-wrapper">
-                    <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
                     <i class="el-icon-caret-bottom"/>
                 </div>
                 <el-dropdown-menu slot="dropdown">

@@ -116,6 +116,10 @@ export default {
     .login-form {
         margin-top: 200px;
         background: transparent;
+
+        .title-container {
+            color: #409eff;
+        }
     }
 }
 </style>
