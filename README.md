@@ -1,8 +1,5 @@
 # banchong
 
-# TODO
-* 列出完整的项目目录结构
-
 ## vue.config.js 配置
 ### baseUrl
 配置站点的根子路径
@@ -58,12 +55,25 @@ eslint 配置
 这里我们本地配置.env.development.local, 线上配置.env.production.local
 
 ## axios配置
-安装
+### 安装
 ```
 npm install --save axios vue-axios
 ```
+### axios配置及全局interceptor
+文件地址 utils/requirest.js
 
+## 本地Token缓存
+文件地址 utils/auth.js
 
+## 权限管理
+权限文件在 utils/permission.js
+### 判断角色
+Vue.prototype.$hasRole([admin, super-admin])  参数为 role 名称数组
+## 判断权限
+Vue.prototype.$hasPermission(permission) 参数为 permission 名称
+
+## 前端mock
+在main.js 注释 import './mock' 停止 mock 对request 的拦截
 
 
 

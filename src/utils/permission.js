@@ -1,22 +1,15 @@
 import store from '@/store/index'
 
-// export default function (Vue) {
-//     Vue.permission = {
-//         hasPermission (permission) {
-
-//         }
-//     }
-
-//     Object.defineProperties(Vue.prototype, {
-//         $permission: {
-//             get () {
-//                 return Vue.permission
-//             }
-//         }
-//     })
-// }
 const permission = {
     install (Vue) {
+        Vue.prototype.$hasRole = function (roles) {
+            for (let index = 0; index < roles.length; index++) {
+                if (store.getters.roles.includes(roles[index])) {
+                    return true
+                }
+            }
+            return false
+        }
         Vue.prototype.$hasPermission = function (permission) {
             return !!store.getters.permissions.includes(permission)
         }

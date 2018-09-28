@@ -46,14 +46,14 @@ export default {
     data () {
         const validateUsername = (rule, value, callback) => {
             if (!isvalidUsername(value)) {
-                callback(new Error('Please enter the correct user name'))
+                callback(new Error('请输入账号'))
             } else {
                 callback()
             }
         }
         const validatePassword = (rule, value, callback) => {
             if (value.length < 6) {
-                callback(new Error('The password can not be less than 6 digits'))
+                callback(new Error('密码应大于6位'))
             } else {
                 callback()
             }
@@ -61,7 +61,7 @@ export default {
         return {
             loginForm: {
                 username: 'admin',
-                password: '1111111'
+                password: ''
             },
             loginRules: {
                 username: [
@@ -98,7 +98,7 @@ export default {
                             this.loading = false
                         })
                 } else {
-                    console.log('error submit!!')
+                    console.log('表单验证失败')
                     return false
                 }
             })
@@ -116,7 +116,10 @@ export default {
     .login-form {
         margin-top: 200px;
         background: transparent;
+
+        .title-container {
+            color: #409eff;
+        }
     }
 }
-
 </style>

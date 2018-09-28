@@ -1,5 +1,5 @@
 <template>
-    <el-menu class="el-menu-vertical-demo" :unique-opened="true" :default-openeds="['1']"  :collapse="isCollapse">
+    <el-menu class="el-menu-vertical-demo text-left" :unique-opened="true" :default-openeds="['1']"  :collapse="isCollapse">
         <el-submenu index="1" v-if="$hasPermission('admin')">
             <template slot="title">
                 <i class="el-icon-location"></i>

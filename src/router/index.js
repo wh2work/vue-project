@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import constantRouterMap from './constantRouter'
+import constantRouterMap from './routers'
 import store from '@/store/index'
 import { getToken } from '@/utils/auth'
 import { Message } from 'element-ui'
